@@ -43,3 +43,4 @@ function digitize(n) {
     }
 
   // 14. 
+  const noTrailingZeros = n => parseInt(n.toString().replace(/0+$/g, '') + 0)/10;

@@ -28,4 +28,16 @@ divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 
 13. Simple, remove the spaces from the string, then return the resultant string.
 
-14.
+14. Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+
+1450 -> 145
+960000 -> 96
+1050 -> 105
+-1050 -> -105
+Zero alone is fine.
+
+15.
