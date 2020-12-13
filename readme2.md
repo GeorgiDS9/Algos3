@@ -40,4 +40,46 @@ Get rid of them. Only the ending ones.
 -1050 -> -105
 Zero alone is fine.
 
-15.
+15. Create a function that takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string):
+
+sumStr("4", "5") // should output "9"
+sumStr("34", "5") // should output "39"
+If either input is an empty string, consider it as zero.
+
+16. Return initials out of full name
+
+17. Write a simple function that takes as a parameter a date object and returns a boolean value representing whether the date is today or not.
+
+Make sure that your function does not return a false positive by just checking just the day.
+
+18. Give you two strings: s1 and s2. If they are opposite, return true; otherwise, return false. Note: The result should be a boolean value, instead of a string.
+
+The opposite means: All letters of the two strings are the same, but the case is opposite. you can assume that the string only contains letters or it's a empty string. Also take note of the edge case - if both strings are empty then you should return false/False.
+
+19. Maybe you don't often use random() when you're dealing with Kata, but every qualified Kata can not be missing random(). Because random testcase is the most basic anti cheating measure. A variety of testcases also help authors identify potential problems. If you also want to create a new Kata and become an author, please follow me to learn about random().
+
+If we want to randomly generate some fixed words, we can use arrays to do:
+
+var names=["John","Tom","Jerry","Minne","Alice","othername..."];
+for (var i=0;i<5;i++)
+console.log(names[~~(names.length*Math.random())]);
+//output:
+Minne
+Alice
+Jerry
+Minne
+othername...
+
+20. You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d).
+
+21. Your function takes two arguments:
+
+current father's age (years)
+current age of his son (years)
+Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+22.
