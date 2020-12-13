@@ -109,3 +109,22 @@ function roundIt(n){
   var [a, b] = n.toString().split('.');
   return a.length > b.length ? Math.floor(n) : a.length === b.length ? Math.round(n) : Math.ceil(n);
 }
+
+// 23. 
+function updateLight(current) {
+  let lights = ['green', 'yellow', 'red'];
+  if (current === 'green') return 'yellow';
+  else if (current === "yellow") return 'red';
+  return 'green';
+  }
+
+  // 24.
+  function find_average(arr) {
+    let sum = 0;
+    let average;
+    for (let i = 0; i < arr.length; i++){
+      sum += arr[i]; 
+      average = sum/arr.length;
+    }
+    return average;
+  }
