@@ -102,4 +102,34 @@ For example, update_light('green') should return 'yellow'.
 
 24. Write function avg which calculates average of numbers in given list.
 
-25.
+25. Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+
+Examples
+replace("Hi!") === "H!!"
+replace("!Hi! Hi!") === "!H!! H!!"
+replace("aeiou") === "!!!!!"
+replace("ABCDE") === "!BCD!"
+
+26. Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not.
+
+Valid examples, should return true:
+
+isDigit("3")
+isDigit(" 3 ")
+isDigit("-3.23")
+
+27. Implement a function which accepts 2 arguments: string and separator.
+
+The expected algorithm: split the string into words by spaces, split each word into separate characters and join them back with the specified separator, join all the resulting "words" back into a sentence with spaces.
+
+For example:
+
+splitAndMerge("My name is John", " ") == "M y n a m e i s J o h n"
+splitAndMerge("My name is John", "-") == "M-y n-a-m-e i-s J-o-h-n"
+splitAndMerge("Hello World!", ".") == "H.e.l.l.o W.o.r.l.d.!"
+splitAndMerge("Hello World!", ",") == "H,e,l,l,o W,o,r,l,d,!"
+
+28. Define a function that removes duplicates from an array of numbers and returns it as a result.
+    The order of the sequence has to stay the same.
+
+29.

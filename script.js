@@ -128,3 +128,73 @@ function updateLight(current) {
     }
     return average;
   }
+
+  // 25.
+  function replace(s){
+    return s.replace(/[aeiou]/gi, "!")
+   }
+
+   // 26.
+   function isDigit(s) {
+    if(typeof(s) !== 'string') return false;
+    return !isNaN(s) && !isNaN(parseFloat(s));
+    }
+
+  // 27.
+  function splitAndMerge(s, sep){
+    let words = s.split(' ');
+    let arr = [];
+    var res = []
+    for(let i = 0; i < words.length; i++){
+     arr.push(words[i].split('').join(sep));
+    }
+    res = arr.join(' ');
+    return res;
+    
+  }
+
+  // 28 v1.
+  function removeDuplicates(array) {
+    return array.filter((a, b) => array.indexOf(a) === b)
+  };
+
+  // 28 v2. 
+  function distinct(a) {
+    return [...new Set(a)];
+  }
+  
+  // 28 v3.
+
+  function distinct(a) {
+    return Array.from(new Set(a));
+  }
+  
+  // 28 v4. 
+  
+  function distinct(arr) {
+  let res = []; 
+  for(let i = 0; i < arr.length; i++){
+    if(!res.includes(arr[i])){
+      res.push(arr[i]);
+    }
+  }
+  return res;
+  }
+  
+  // 28 v5. Using hash-map
+
+  function removeDuplicates(array) {
+    const result = [];
+    const map = {};
+  
+    for (let i = 0; i < array.length; i++) {
+      if (map[array[i]]) {
+        continue;
+      } else {
+        result.push(array[i]);
+        map[array[i]] = true;
+      }
+    }
+    return result;
+  }
+
