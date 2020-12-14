@@ -198,3 +198,25 @@ function updateLight(current) {
     return result;
   }
 
+// 29 (my solution)
+
+function mergeArrays(arr1, arr2) {
+  let merged = arr1.concat(arr2);
+  let sorted = merged.sort((a, b) => {
+    return a - b;
+  });
+ let res = []; 
+  for(let i = 0; i < sorted.length; i++){
+    if(!res.includes(sorted[i])){
+      res.push(sorted[i]);
+    }
+  }
+  return res;
+}
+
+// 29 v2.
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+}
+
+// 30.
