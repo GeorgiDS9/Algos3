@@ -220,3 +220,83 @@ function mergeArrays(arr1, arr2) {
 }
 
 // 30.
+//return price without vat
+ function excludingVatPrice(price){
+  const prodPrice = price/(1+(15/100));
+ return parseFloat(prodPrice.toFixed(2));
+}
+
+// 31. 
+function datingRange(age){
+  return `${min(age)}-${max(age)}`;
+  
+  function min(age) {
+    return Math.floor(age > 14 ? (age / 2) + 7 : age - 0.10 * age);
+  }
+  
+  function max(age) {
+    return Math.floor(age > 14 ? (age - 7) * 2 : age + 0.10 * age);
+  }
+}
+
+// 32.
+function charFreq(message) {
+  var obj = {};
+  for (var i=0; i<message.length; i++) {
+    obj[message[i]] = ++obj[message[i]] || 1;
+  }
+  return obj;
+}
+
+// 33.
+function getStrings(city) {
+  city = city.toLowerCase();
+  let obj = {};
+  let str = '';
+
+  for (let elem of city) {
+      if (!(elem in obj)) {
+          obj[elem] = '*';
+      } else {
+          obj[elem] += '*';
+      }
+  }
+
+  for (let key in obj) {
+      if (key !== ' ') {
+          str += key + ':' + obj[key] + ',';
+      }
+  }
+
+  return str.substring(0, str.length - 1);
+}
+
+// 34.
+function getCount(str) {
+  let v = str.match(/[aeiou]/gi);
+  return v === null ? 0 : v.length;
+}
+
+// 35.
+function solve(a,b){
+  const arr = [];
+   
+   for (let i = 0; i < a.length; i ++){
+       if (!b.includes(a[i])){
+         arr.push(a[i]);
+       }
+   }
+       
+   for (let i = 0; i < b.length; i ++){
+       if (!a.includes(b[i])){
+         arr.push(b[i]);
+       }
+   }
+   
+   return arr.join('');
+   
+ };
+
+ 36. 
+ 
+

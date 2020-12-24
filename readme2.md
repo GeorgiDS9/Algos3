@@ -138,4 +138,75 @@ You don't need to worry about validation, since arr1 and arr2 must be arrays wit
 
 Note: arr1 and arr2 may be sorted in different orders. Also arr1 and arr2 may have same integers. Remove duplicated in the returned result.
 
-30.
+30. Write a function that calculates the original product price, without VAT.
+
+Example
+If a product price is 200.00 and VAT is 15%, then the final product price (with VAT) is: 200.00 + 15% = 230.00
+
+Thus, if your function receives 230.00 as input, it should return 200.00
+
+Notes:
+
+VAT is always 15% for the purposes of this Kata.
+Round the result to 2 decimal places.
+If null value given then return -1
+
+31. Everybody knows the classic "half your age plus seven" dating rule that a lot of people follow (including myself). It's the 'recommended' age range in which to date someone.
+
+minimum age <= your age <= maximum age #Task
+
+Given an integer (1 <= n <= 100) representing a person's age, return their minimum and maximum age range.
+
+This equation doesn't work when the age <= 14, so use this equation instead:
+
+min = age - 0.10 _ age
+max = age + 0.10 _ age
+
+You should floor all your answers so that an integer is given instead of a float (which doesn't represent age). Return your answer in the form [min]-[max]
+
+##Examples:
+
+age = 27 => 20-40
+age = 5 => 4-5
+age = 17 => 15-20
+
+32. Your function will be called char_freq/charFreq/CharFreq and you will get passed a string, you will then return a dictionary (object in JavaScript) with as keys the characters, and as values how many times that character is in the string. You can assume you will be given valid input.
+
+Example
+charFreq("I like cats") // Returns {'a': 1, ' ': 2, 'c': 1, 'e': 1, 'I': 1, 'k': 1, 'l': 1, 'i': 1, 's': 1, 't': 1}
+
+33. 7 kyu
+    You receive the name of a city as a string, and you need to return a string that shows how many times each letter shows up in the string by using asterisks (\*).
+
+For example:
+
+"Chicago" --> "c:\*_,h:_,i:_,a:_,g:_,o:_"
+As you can see, the letter c is shown only once, but with 2 asterisks.
+
+The return string should include only the letters (not the dashes, spaces, apostrophes, etc). There should be no spaces in the output, and the different letters are separated by a comma (,) as seen in the example above.
+
+Note that the return string must list the letters in order of their first appearance in the original string.
+
+More examples:
+
+"Bangkok" --> "b:_,a:_,n:_,g:_,k:**,o:_"
+"Las Vegas" --> "l:_,a:**,s:\*_,v:_,e:_,g:_"
+
+34. 7 kyu
+
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+
+35. In this Kata, you will be given two strings a and b and your task will be to return the characters that are not common in the two strings.
+
+For example:
+
+solve("xyab","xzca") = "ybzc"
+--The first string has 'yb' which is not in the second string.
+--The second string has 'zc' which is not in the first string.
+Notice also that you return the characters from the first string concatenated with those from the second string.
+
+36.
